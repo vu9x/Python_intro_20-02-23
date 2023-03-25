@@ -1,3 +1,16 @@
+vowels = "уеыаоэяию"
+user_poem = "пара-ра-рам рам-пам-папам па-ра-па-да"
+result = set()
+
+phraze = lambda poem: poem.split()
+use_phraze = phraze(user_poem)
+
+for i in use_phraze:
+    result.add(len(list(filter(lambda x: x in vowels, i))))
+    
+print("Парам пам-пам") if len(result) == 1 else print("Пам парам")
+    
+
 # def vowel_counter(phraze):
 #     vowels = "уеыаоэяию"
 #     counter = 0
@@ -15,18 +28,3 @@
 
 # for i in phraze_1:
 #     print(vowel_counter(i))
-
-vowels = "уеыаоэяию"
-user_poem = "пара-ра-рам рам-пам-папам па-ра-па-да"
-result = set()
-
-phraze = lambda poem: poem.split()
-use_phraze = phraze(user_poem)
-
-for i in use_phraze:
-    result.add(len(list(filter(lambda x: x in vowels, i))))
-
-if len(result) == 1:
-    print("Парам пам-пам")
-else:
-    print("Пам парам")
