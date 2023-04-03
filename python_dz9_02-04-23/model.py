@@ -1,7 +1,7 @@
 import os
 
 phone_book = []
-path = os.path.join(os.getcwd(),'Python_intro_20-02-23\phone_book.txt')
+path = os.path.join(os.getcwd(),'Python_intro_20-02-23\Python_intro_20-02-23\python_dz9_02-04-23\phone_book.txt')
 
 
 def open_file():
